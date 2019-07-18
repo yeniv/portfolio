@@ -1,12 +1,26 @@
-.navbar-lewagon {
+.nav-container {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
   justify-content: space-between;
-  background: white;
+  align-items: center;
+  height: 5.5vw;
+  padding: 0 4vw;
+  z-index: 1;
+  a {
+    color: $hero-color;
+    font-family: $headers-font;
+    text-decoration: none;
+    font-weight: 900;
+  }
 }
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.nav-links a {
+  font-size: 20px;
+  padding: 0 20px;
 }
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.nav-title a, span {
+  font-size: 32px;
+}
+.nav-button {
 }

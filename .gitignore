@@ -2,6 +2,7 @@
 log/*.log
 tmp/**/*
 tmp/*
+temp
 !log/.keep
 !tmp/.keep
 *.swp
