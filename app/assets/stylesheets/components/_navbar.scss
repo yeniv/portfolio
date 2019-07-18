@@ -6,21 +6,61 @@
   justify-content: space-between;
   align-items: center;
   height: 5.5vw;
-  padding: 0 4vw;
+  padding: 0 2vw;
   z-index: 1;
   a {
-    color: $hero-color;
+    // padding: 0;
+    margin: 0 20px;
     font-family: $headers-font;
     text-decoration: none;
-    font-weight: 900;
   }
 }
-.nav-links a {
+
+.nav-right {
+  color: $hero-color;
+  display: flex;
   font-size: 20px;
-  padding: 0 20px;
+  font-weight: 800;
 }
-.nav-title a, span {
-  font-size: 32px;
+
+.nav-title {
+  color: $hero-color;
+  font-weight: 900;
+  font-size: 30px;
 }
-.nav-button {
+
+.nav-title:hover {
+    color: $hero-color;
+  }
+
+.nav-link {
+  color: $hero-color;
+  padding: 12px 0;
+  box-shadow: 0 0 0 0px $hero-color inset;
+  transition: all 0.4s ease;
 }
+
+.nav-link:hover {
+  color: $hero-color;
+  box-shadow: 0 -8px $hero-color inset;
+  transition: all 0.4s ease;
+}
+
+.nav-link-btn {
+  color: white;
+  // background-color: $hero-color;
+  padding: 12px 16px;
+  text-decoration: none;
+  box-shadow: 0 54px $hero-color inset;
+  transition: all 0.4s ease;
+}
+
+.nav-link-btn:hover {
+  // border: 5px solid $hero-color;
+  // padding: 7px;
+  box-shadow: 0 0 0 5px $hero-color inset;
+  // background-color: white;
+  color: $hero-color;
+  transition: all 0.4s ease;
+}
+
