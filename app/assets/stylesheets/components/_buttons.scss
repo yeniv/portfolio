@@ -1,6 +1,7 @@
 .content-btn-container {
-  position: absolute;
-  bottom: 40px;
+  // position: absolute;
+  // bottom: 40px;
+  margin: 20px 0 8px 0;
 }
 
 .content-btn {
@@ -40,11 +41,8 @@
   color: white;
 }
 
-
-
-
 .text-btn-white {
-  padding: 2px;
+  padding: 3px 0;
   margin: 0 -1px;
   font-weight: 600;
   color: white;
@@ -53,14 +51,16 @@
 }
 
 .text-btn-white:hover {
-  color: $hero-color;
+  // color: $hero-color;
+  color: white;
   text-decoration: none;
-  box-shadow: 0 -40px white inset;
+  box-shadow: 0 0 white inset;
+  // box-shadow: 0 -40px white inset;
   transition: all 0.4s ease;
 }
 
 .text-btn-red {
-  padding: 2px;
+  padding: 3px 0;
   margin: 0 -1px;
   font-weight: 600;
   color: $hero-color;
@@ -71,6 +71,7 @@
 .text-btn-red:hover {
   color: white;
   text-decoration: none;
-  box-shadow: 0 -40px $hero-color inset;
+  box-shadow: 0 0px $hero-color inset;
+  // box-shadow: 0 -40px $hero-color inset;
   transition: all 0.4s ease;
 }
