@@ -1,0 +1,21 @@
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 10vw;
+  padding: 20px;
+  text-align: center;
+  p {
+    font-size: 75px;
+  }
+  h3 {
+    font-size: 40px;
+    font-family: $body-font;
+    font-weight: 700;
+    // font-family: 'Nunito';
+  }
+}
+
+.footer-links {
+}
