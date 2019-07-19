@@ -1,0 +1,77 @@
+.content-btn-container {
+  // position: absolute;
+  // bottom: 40px;
+  margin: 20px 0 8px 0;
+}
+
+.content-btn {
+  padding: 14px 16px;
+  font-family: $headers-font;
+  font-weight: 800;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: all 0.4s ease;
+}
+
+.content-btn:hover {
+  text-decoration: none;
+}
+
+.content-btn-white {
+  color: white;
+  box-shadow: 0 0 0 5px white inset;
+  transition: all 0.4s ease;
+}
+
+.content-btn-white:hover {
+  box-shadow: 0 54px white inset;
+  transition: all 0.4s ease;
+  color: $hero-color;
+}
+
+.content-btn-red {
+  color: $hero-color;
+  box-shadow: 0 0 0 5px $hero-color inset;
+  transition: all 0.4s ease;
+}
+
+.content-btn-red:hover {
+  box-shadow: 0 54px $hero-color inset;
+  transition: all 0.4s ease;
+  color: white;
+}
+
+.text-btn-white {
+  padding: 3px 0;
+  margin: 0 -1px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.4s ease;
+  box-shadow: 0 -4px white inset;
+}
+
+.text-btn-white:hover {
+  // color: $hero-color;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0 white inset;
+  // box-shadow: 0 -40px white inset;
+  transition: all 0.4s ease;
+}
+
+.text-btn-red {
+  padding: 3px 0;
+  margin: 0 -1px;
+  font-weight: 600;
+  color: $hero-color;
+  transition: all 0.4s ease;
+  box-shadow: 0 -4px $hero-color inset;
+}
+
+.text-btn-red:hover {
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0px $hero-color inset;
+  // box-shadow: 0 -40px $hero-color inset;
+  transition: all 0.4s ease;
+}

@@ -28,7 +28,8 @@
     }
   }
   h3, span {
-    font-size: 1.9vw;
+    font-size: 1.6vw;
+    font-weight: 700;
     color: white;
     transition: all 0.8s ease;
   }
@@ -53,26 +54,32 @@
   border: 2px solid $hero-color;
 }
 
-.home-image {
+.home-image-forrest {
   width: 700px;
   height: 600px;
   object-fit: cover;
   object-position: center;
 }
 
-.home-logo-img {
-  width: 80px;
-  height: 80px;
+.home-image-hiive {
+  width: 820px;
+  height: 600px;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
+.home-image-fetch {
+  width: 800px;
+  height: 600px;
   object-fit: cover;
   object-position: center;
 }
 
 .home-description {
   z-index: 1;
-  width: 450px;
-  height: 450px;
+  width: 440px;
+  // height: 450px;
   position: relative;
-  right: 50px;
   padding: 30px;
   h2 {
     font-weight: 900;
@@ -84,33 +91,13 @@
   p {
     font-size: 20px;
     line-height: 26px;
-    font-weight: 700;
-    margin-bottom: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
   }
   img {
     margin-bottom: 15px;
+    margin-top: -12px;
   }
-}
-
-.content-button-container {
-}
-
-.content-button-white {
-  padding: 14px 16px;
-  font-family: $headers-font;
-  font-weight: 800;
-  font-size: 20px;
-  color: white;
-  box-shadow: 0 0 0 5px white inset;
-  margin-right: 10px;
-  transition: all 0.4s ease;
-}
-
-.content-button-white:hover {
-  box-shadow: 0 54px white inset;
-  text-decoration: none;
-  color: $hero-color;
-  transition: all 0.4s ease;
 }
 
 .red-text {
@@ -130,10 +117,12 @@
 }
 
 .home-description-red {
+  right: 50px;
   background-color: $hero-color;
 }
 
 .home-description-white {
+  left: 50px;
   background-color: white;
 }
 
