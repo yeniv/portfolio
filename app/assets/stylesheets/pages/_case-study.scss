@@ -81,11 +81,29 @@
   object-position: center;
 }
 
+.case-study-img-lg-sq {
+  width: 850px;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.case-study-img-iphone{
+  height: 700px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .case-study-text-box {
   z-index: 1;
   width: 440px;
   position: relative;
   padding: 30px;
+}
+
+.case-study-center-text {
+  margin: 0 auto;
+  margin-top: -50px;
 }
 
 .case-study-right-text {
