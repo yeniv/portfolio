@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get '/about', to: 'pages#about'
   get '/contact', to: 'pages#contact'
   get '/forrest', to: 'pages#forrest'
+  get '/hiive', to: 'pages#hiive'
+  get '/fetch', to: 'pages#fetch'
 end
