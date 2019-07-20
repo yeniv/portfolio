@@ -1,0 +1,35 @@
+.site-container {
+  padding: 0 4vw;
+}
+
+.red-text {
+  color: $hero-color;
+}
+
+.white-text {
+  color: white
+}
+
+.red-underline {
+  border-bottom: 10px solid $hero-color;
+}
+
+.white-underline {
+  border-bottom: 10px solid white;
+}
+
+.white-border {
+  border: 3px solid white;
+}
+
+.red-border {
+  border: 3px solid $hero-color;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.red-bg {
+  background-color: $hero-color;
+}
