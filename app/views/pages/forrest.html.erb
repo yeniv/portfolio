@@ -1,2 +1,100 @@
-<p>forrest gump goes here...</p>
+<div class="case-study-header">
+  <div class="case-study-header-info">
+    <h1>
+      Run, Forrest! Run!
+    </h1>
+    <div class="case-study-tech-stack">
+      <p>Ruby</p>
+      <p>Ruby on Rails</p>
+      <p>Javascript</p>
+      <p>CSS</p>
+      <p>HTML</p>
+      <p>PostgreSQL</p>
+      <p>Twitter API</p>
+      <p>Mapbox API</p>
+      <p>WebSockets</p>
+      <p>Sidekiq Scheduler</p>
+    </div>
+  </div>
+</div>
+
+<div class="case-study-container case-study-container-white">
+  <div class="case-study-text-box case-study-left-text red-text red-border white-bg">
+    <p>
+      In 1979, Forrest Gump started running. 3 years, 2 months, 14 days, 16 hours, and 13,089 miles later he said he was tired... and went home.
+    </p>
+  </div>
+  <img src="<%= image_path('forrest/forrest-run.gif')  %>" class="case-study-img-md red-border" alt="forrest gump running gif as reporter asks 'why are you doing this?'">
+</div>
+
+<div class="case-study-container case-study-container-red white-text">
+  <img src="<%= image_path('forrest/felt-like-running.gif')  %>" class="case-study-img-md white-border" alt="forrest gump smiling and waving wearing a singlet">
+  <div class="case-study-text-box case-study-right-text red-bg white-text white-border">
+    <p>
+      I wanted to see how long it would take Forrest (and the Internet) to do it again. So I built a Rails app where every time #runforrestrun is Tweeted, Forrest runs one mile across America.
+    </p>
+  </div>
+</div>
+
+<div class="case-study-container case-study-container-white">
+  <div class="case-study-text-box case-study-left-text red-text red-border white-bg">
+    <p>
+      Forrest runs between the 9 known locations from the movie. The GeoJSON route was calculated using the Mapbox Directions API, which generated thousands of latitude-longitude coordinates following the roads.
+    </p>
+  </div>
+  <img src="<%= image_path('forrest/forrest-locations.jpeg')  %>" class="case-study-img-lg red-border" alt="forrest gump running gif as reporter asks 'why are you doing this?'">
+</div>
+
+<div class="case-study-container case-study-container-red white-text">
+  <img src="<%= image_path('forrest/forrest_2.jpeg')  %>" class="case-study-img-md white-border" alt="map from forrestgump.live showing forrest gump marker in nebraska">
+  <div class="case-study-text-box case-study-right-text red-bg white-text white-border">
+    <p>
+      However, the API wouldn't calculate a route this long. So I wrote a function combining several API calls and  mapped the coordinates to the, well, map using Javascript.
+    </p>
+  </div>
+</div>
+
+<div class="case-study-container case-study-container-white">
+  <div class="case-study-text-box case-study-left-text red-text red-border white-bg">
+    <p>
+      A scheduled Sidekiq background task calls the Twitter API every 24-seconds (maximising Twitter's 150 API calls/hour limit) to search for new Tweets using #runforrestrun.
+    </p>
+  </div>
+  <img src="<%= image_path('forrest/forrest_3.jpeg')  %>" class="case-study-img-md red-border" alt="tweet from forrestgump.live showing someone using #runforrestrun while playing world of warcraft">
+</div>
+
+<div class="case-study-container case-study-container-white">
+  <img src="<%= image_path('forrest/forrest_4.jpeg')  %>" class="case-study-img-md red-border" alt="forrest gump marker saying i just felt like running in a speech bubble">
+  <div class="case-study-text-box case-study-right-text red-text red-border white-bg">
+    <p>
+      When a new Tweet is found, the Forrest Gump marker moves 1 mile, the map zooms into the new location, and a random Forrest Gump quote appears in a pop-up.
+    </p>
+  </div>
+</div>
+
+<div class="case-study-container case-study-container-red white-text">
+  <img src="<%= image_path('forrest/forrest_2.jpeg')  %>" class="case-study-img-md white-border" alt="map from forrestgump.live showing forrest gump marker in nebraska">
+  <div class="case-study-text-box case-study-right-text red-bg white-text white-border">
+    <p>
+      Using WebSockets and Javascript, the new Tweets are dynamically pushed to the top of the DOM and the mile remaining counter is updated.
+      <br><br>
+      Tweet(s) are stored in a PostgreSQL database and the most recent 50 Tweets are displayed in a custom card. Hash tags, mentions, and links are all clickable.
+  </div>
+</div>
+
+  <p>
+    Optimised for mobile.
+  </p>
+
+  <p>
+    The idea has picked up a little bit of momentum on Twitter.
+  </p>
+
+  <p>
+    Including a ✌️ of approval from DHH himself.
+  </p>
+
+</div>
+
+
 
