@@ -3,21 +3,43 @@
     <h1>
       hiive
     </h1>
-    <div class="case-study-tech-stack">
-      <p>Ruby</p>
-      <p>Ruby on Rails</p>
-      <p>Javascript</p>
-      <p>CSS</p>
-      <p>HTML</p>
-      <p>Regex</p>
-      <p>Nokogiri</p>
-      <p>PostgreSQL</p>
-      <p>Devise</p>
-      <p>Carrierwave</p>
-      <p>Cloudinary</p>
-      <p>Custom API</p>
-      <p>WebSockets</p>
-      <p>Sidekiq background jobs</p>
+    <div class="case-study-tech-stack-text">
+      <p>
+        Ruby | Ruby on Rails | Javascript | CSS | HTML | Regex | Nokogiri | PostgreSQL | Devise | Carrierwave | Cloudinary | Custom API | WebSockets | Sidekiq background jobs
+    </div>
+    <div class="content-btn-container">
+      <%= link_to 'SEE PROJECT', 'http://hiive.buzz', target: 'blank', class: 'content-btn content-btn-red'  %>
+      <%= link_to 'SEE CODE', 'https://github.com/yeniv/hiive', target: 'blank', class: 'content-btn content-btn-red'  %>
     </div>
   </div>
 </div>
+
+This project was created in the final 2-weeks of the Le Wagon bootcamp.
+
+hiive allows content creators (YouTubers, podcasters, bloggers, etc) to instantly transform their referral links* into an online store for a better shopping experience for their audience — and increased revenue for them!
+
+*currently only Amazon referral links.
+
+After creating an account, creators can add products to their store by pasting as many referral links as they like. This text can include description copy, spaces, and random symbols as valid URLs are matched with regex.
+
+If the referral link doesn't work, the product can be inputted manually. But where's the fun in that?
+
+After submitting a link or twenty, a sidekick background job visits each link and scrapes relevant product information with Nokogiri (title, price, description, etc). Images are uploaded with Carrierwave and stored on Cloudinary.
+
+Each store has a public version and a private version where the creator can manage their store.
+
+A memorable URL is created for each store. Now, instead of sharing 20 ugly blue referral links and cluttering up their content, creators can share a neat, simple link to their store.
+
+This presented our first serious roadblock, as Amazon has measures in place to prevent this kind of activity. But we found a work-around by passing (legitimate-looking) headers with our HTTP get request.
+
+We created an API to periodically call and instantly add products to the creator's store as they're added to the database. When a user clicks BUY they're taken to the original link which includes the creator's unique referral key so they still earn their commission.
+
+With WebSockets (Rails ActionCable) we can alert the user each time a product is added, or an unsupported link was submitted, in real time.
+
+Users can leave reviews and rate products.
+
+Users can search products and instantly see the results thanks to a detailed SQL query and Javascript removing products which don't fit the criteria.
+
+Users can see all the creators on the site at a glance and visit their stores.
+
+Users can see top categories, top creators, and the top products (based on likes).

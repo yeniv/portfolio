@@ -11,6 +11,11 @@
     padding-bottom: 15px;
     margin-bottom: 20px;
   }
+  h3 {
+    font-size: 4vw;
+    font-weight: 900;
+    padding-bottom: 2vw;
+  }
   p {
     margin: 0;
     font-size: 20px;
@@ -49,23 +54,35 @@
   }
 }
 
-.case-study-tech-stack p {
-  display: inline-block;
-  color: $hero-color;
-  margin: 0.2vw;
-  font-weight: 800;
-  font-size: 0.9vw;
-  padding: 0.4vw 0.6vw;
-  transition: all 0.4s ease;
-  box-shadow: 0 0 0 4px $hero-color inset;
+.case-study-tech-stack {
+  padding-bottom: 2vw;
+  p {
+    display: inline-block;
+    color: white;
+    margin: 0.2vw;
+    font-weight: 800;
+    font-size: 0.9vw;
+    padding: 0.4vw 0.6vw;
+    box-shadow: 0 36px $hero-color inset;
+    transition: all 0.4s ease;
+  }
 }
 
-.case-study-tech-stack p:hover {
-  color: white;
-  cursor: pointer;
-  box-shadow: 0 36px $hero-color inset;
-  transition: all 0.4s ease;
+.case-study-tech-stack-text {
+  padding-bottom: 1.2vw;
+  p {
+    color: $hero-color;
+    font-weight: 800;
+    font-size: 1vw;
+  }
 }
+
+// .case-study-tech-stack p:hover {
+//   color: $hero-color;
+//   cursor: pointer;
+//   box-shadow: 0 0 0 4px $hero-color inset;
+//   transition: all 0.4s ease;
+// }
 
 .case-study-img-md {
   width: 600px;
