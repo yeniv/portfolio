@@ -69,7 +69,7 @@
 }
 
 .text-btn-red:hover {
-  color: white;
+  color: $hero-color;
   text-decoration: none;
   box-shadow: 0 0px $hero-color inset;
   // box-shadow: 0 -40px $hero-color inset;

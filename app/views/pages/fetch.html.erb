@@ -3,18 +3,34 @@
     <h1>
       Fetch
     </h1>
-    <div class="case-study-tech-stack">
-      <p>Ruby</p>
-      <p>Ruby on Rails</p>
-      <p>Javascript</p>
-      <p>CSS</p>
-      <p>HTML</p>
-      <p>PostgreSQL</p>
-      <p>Devise</p>
-      <p>Carrierwave</p>
-      <p>Cloudinary</p>
-      <p>Mapbox API</p>
-      <p>Geocoder</p>
+    <div class="case-study-tech-stack-text">
+      <p>
+        Ruby | Ruby on Rails | Javascript | CSS | HTML | PostgreSQL | Devise | Carrierwave | Cloudinary | Mapbox API | Geocoder
+      </p>
+    </div>
+    <div class="content-btn-container">
+      <%= link_to 'SEE PROJECT', 'http://fetch-dogs.herokuapp.com', target: 'blank', class: 'content-btn content-btn-red'  %>
+      <%= link_to 'SEE CODE', 'https://github.com/yeniv/fetch', target: 'blank', class: 'content-btn content-btn-red'  %>
     </div>
   </div>
 </div>
+
+<div class="case-study-container case-study-container-white">
+  <div class="case-study-text-box case-study-left-text red-text red-border white-bg">
+    <p>
+      Working in a team of 4 at <a href="http://www.lewagon.com" class="text-btn-red">Le Wagon</a>, we were tasked to build a web app from scratch with the same functionality as (the original) airBNB. We concepted, designed, and coded Fetch.
+    </p>
+  </div>
+  <img src="<%= image_path('forrest/forrest-run.gif')  %>" class="case-study-img-md red-border" alt="forrest gump running gif as reporter asks 'why are you doing this?'">
+</div>
+
+<div class="case-study-container case-study-container-white">
+  <img src="<%= image_path('forrest/forrest-run.gif')  %>" class="case-study-img-md red-border" alt="forrest gump running gif as reporter asks 'why are you doing this?'">
+  <div class="case-study-text-box case-study-right-text red-text red-border white-bg">
+    <p>
+      Fetch connects dogless dog-lovers with dogs who need walking. It's a win-win!
+    </p>
+  </div>
+</div>
+
+
