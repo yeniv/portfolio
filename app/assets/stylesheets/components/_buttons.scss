@@ -41,6 +41,20 @@
   color: white;
 }
 
+.content-btn-red-sm {
+  padding: 12px 12px;
+  color: $hero-color;
+  box-shadow: 0 0 0 3px $hero-color inset;
+  transition: all 0.6s ease;
+}
+
+.content-btn-red-sm:hover {
+  text-decoration: none;
+  box-shadow: 0 54px $hero-color inset;
+  transition: all 0.6s ease;
+  color: white;
+}
+
 .text-btn-white {
   padding: 3px 0;
   margin: 0 -1px;
@@ -69,6 +83,24 @@
 }
 
 .text-btn-red:hover {
+  color: $hero-color;
+  text-decoration: none;
+  box-shadow: 0 0px $hero-color inset;
+  // box-shadow: 0 -40px $hero-color inset;
+  transition: all 0.4s ease;
+}
+
+.text-btn-red-sm {
+  padding: 3px 0;
+  margin: 0 -1px;
+  // font-weight: 600;
+  color: $hero-color;
+  // color: $hero-color;
+  transition: all 0.4s ease;
+  box-shadow: 0 -3px $hero-color inset;
+}
+
+.text-btn-red-sm:hover {
   color: $hero-color;
   text-decoration: none;
   box-shadow: 0 0px $hero-color inset;
