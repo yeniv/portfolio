@@ -20,11 +20,11 @@
       Working in a team of 4, we built hiive in two weeks as our final project of the 9-week <a href="http://www.lewagon.com" class="text-btn-red">Le Wagon</a> bootcamp.
     </p>
   </div>
-  <img src="<%= image_path('forrest/forrest-run.gif')  %>" class="case-study-img-md red-border" alt="forrest gump running gif as reporter asks 'why are you doing this?'">
+  <img src="<%= image_path('hiive/hiive_home_page_center.jpeg')  %>" class="case-study-img-lg-sq red-border" alt="hiive.buzz screenshot of homepage">
 </div>
 
 <div class="case-study-container case-study-container-white">
-  <img src="<%= image_path('forrest/forrest-run.gif')  %>" class="case-study-img-md red-border" alt="forrest gump running gif as reporter asks 'why are you doing this?'">
+  <img src="<%= image_path('hiive/hiive_1.jpeg') %>" class="case-study-img-lg red-border" alt="hiive.buzz screenshot of Peter McKinnon store">
   <div class="case-study-text-box case-study-right-text red-text red-border white-bg">
     <p>
       hiive allows content creators to instantly transform the referral links* they post on their channels into an online store. Creating a better shopping experience for their audience (and more revenue for them).
@@ -40,11 +40,11 @@
       After creating an account, creators add products to their store by pasting as many referral links as they like at one. Valid URLs are matched with regex, so the inputted text can include description copy, spaces, and random symbols.
     </p>
   </div>
-  <img src="<%= image_path('forrest/felt-like-running.gif')  %>" class="case-study-img-md white-border" alt="forrest gump smiling and waving wearing a singlet">
+  <img src="<%= image_path('hiive/hiive_2.jpeg') %>" class="case-study-img-lg-sq white-border" alt="hiive.buzz referal link input field">
 </div>
 
 <div class="case-study-container case-study-container-red white-text">
-  <img src="<%= image_path('forrest/felt-like-running.gif')  %>" class="case-study-img-md white-border" alt="forrest gump smiling and waving wearing a singlet">
+  <img src="<%= image_path('hiive/hiive_3.jpeg') %>" class="case-study-img-lg-sq white-border" alt="hiive.buzz add product page displaying how you can manually enter a product">
   <div class="case-study-text-box case-study-right-text red-bg white-text white-border">
     <p>
       If the referral link doesn't work, the product can be inputted manually. But where's the fun in that?
@@ -58,11 +58,11 @@
       A Sidekick background job visits each submitted link and scrapes relevant product information with Nokogiri. Image URLs are stored in the PostreSQL database and then uploaded to <a href="https://www.cloudinary.com/" class="text-btn-red" target="blank">Cloudinary</a> using <a href="https://github.com/carrierwaveuploader/carrierwave" class="text-btn-red" target="blank">Carrierwave</a>.
     </p>
   </div>
-  <img src="<%= image_path('forrest/forrest-run.gif')  %>" class="case-study-img-md red-border" alt="forrest gump running gif as reporter asks 'why are you doing this?'">
+  <img src="<%= image_path('hiive/hiive_4.jpeg')  %>" class="case-study-img-lg red-border" alt="forrest gump running gif as reporter asks 'why are you doing this?'">
 </div>
 
 <div class="case-study-container case-study-container-white">
-  <img src="<%= image_path('forrest/forrest-run.gif')  %>" class="case-study-img-md red-border" alt="forrest gump running gif as reporter asks 'why are you doing this?'">
+  <img src="<%= image_path('hiive/excellent.gif')  %>" class="case-study-img-md red-border" alt="gif of mr burns from the simpsons looking devious as he says 'excellent'">
   <div class="case-study-text-box case-study-right-text red-text red-border white-bg">
     <p>
      This presented our first serious roadblock, as Amazon has measures in place to prevent this kind of activity. But we found a work-around by passing (legitimate-looking) headers with our HTTP GET request.
@@ -71,7 +71,7 @@
 </div>
 
 <div class="case-study-container case-study-container-red white-text">
-  <img src="<%= image_path('forrest/felt-like-running.gif')  %>" class="case-study-img-md white-border" alt="forrest gump smiling and waving wearing a singlet">
+  <img src="<%= image_path('hiive/hiive_5')  %>" class="case-study-img-md white-border" alt="close up of hiive.buzz custom url hiive.buzz/peter">
   <div class="case-study-text-box case-study-right-text red-bg white-text white-border">
     <p>
       A custom hiive URL is created for each store. Now creators can share a single neat link, instead 20 ugly blue referral links cluttering up their content.
@@ -85,11 +85,11 @@
      We built a hiive API to return the products currently available in a creator's store. We periodically call this API to instantly add new product cards to the store as they're added to the database.
     </p>
   </div>
-  <img src="<%= image_path('forrest/forrest-run.gif')  %>" class="case-study-img-md red-border" alt="forrest gump running gif as reporter asks 'why are you doing this?'">
+  <img src="<%= image_path('hiive/hiive_6.jpeg')  %>" class="case-study-img-lg-sq red-border" alt="hiive.buzz screen shot of Roman Mars' store made from referal links. Fictional, of course.">
 </div>
 
 <div class="case-study-container case-study-container-red white-text">
-  <img src="<%= image_path('forrest/felt-like-running.gif')  %>" class="case-study-img-md white-border" alt="forrest gump smiling and waving wearing a singlet">
+  <img src="<%= image_path('hiive/hiive_7c')  %>" class="case-study-img-lg case-satudy-img-top white-border" alt="amazon screenshot of go pro camera with referal link highlighted in chrome browser URL">
   <div class="case-study-text-box case-study-right-text red-bg white-text white-border">
     <p>
       When a user clicks 'BUY', they're taken to the original referal link containing the creator's unique referral key, so they still earn their commission.
@@ -100,14 +100,14 @@
 <div class="case-study-container case-study-container-white">
   <div class="case-study-text-box case-study-left-text red-text red-border white-bg">
     <p>
-     With WebSockets and flash cards, we alert the creator each time a product is added, deleted, or an unsupported link was submitted — in real time.
+     Using WebSockets and flash cards, creators are notified each time a product is added, deleted, or an unsupported link was submitted — in real time.
     </p>
   </div>
-  <img src="<%= image_path('forrest/forrest-run.gif')  %>" class="case-study-img-md red-border" alt="forrest gump running gif as reporter asks 'why are you doing this?'">
+  <img src="<%= image_path('hiive/hiive_8.jpeg')  %>" class="case-study-img-lg-sq case-study-img-right red-border" alt="hiive.buzz screenshot of several notifications indicating new products have been added to the store">
 </div>
 
 <div class="case-study-container case-study-container-red white-text">
-  <img src="<%= image_path('forrest/felt-like-running.gif')  %>" class="case-study-img-md white-border" alt="forrest gump smiling and waving wearing a singlet">
+  <img src="<%= image_path('hiive/hiive_9.jpeg') %>" class="case-study-img-lg white-border" alt="forrest gump smiling and waving wearing a singlet">
   <div class="case-study-text-box case-study-right-text red-bg white-text white-border">
     <p>
       Users can leave reviews, 'like' products, and rate them out of 5 bees. Yes, bees! 🐝
@@ -121,20 +121,20 @@
       Users can search products and instantly see the results thanks to a detailed active record search and Javascript removing products which don't fit the criteria.
     </p>
   </div>
-  <img src="<%= image_path('forrest/felt-like-running.gif')  %>" class="case-study-img-md white-border" alt="forrest gump smiling and waving wearing a singlet">
+  <img src="<%= image_path('hiive/hiive_10.jpeg') %>" class="case-study-img-lg white-border" alt="hiive.buzz screenshot of the search page displaying sneakers">
 </div>
 
 <div class="case-study-container case-study-container-white">
   <div class="case-study-text-box case-study-left-text red-text red-border white-bg">
     <p>
-     Users can also browse top categories, top creators, and the top products (based on likes). This was designed to help users discover creators and products they have never heard of.
+     Users can also browse top categories, top creators, and the top products (based on likes). This was designed to help users discover new creators and products they may otherwise never have encountered.
     </p>
   </div>
-  <img src="<%= image_path('forrest/forrest-run.gif')  %>" class="case-study-img-md red-border" alt="forrest gump running gif as reporter asks 'why are you doing this?'">
+  <img src="<%= image_path('hiive/hiive_11.jpeg')  %>" class="case-study-img-lg-sq red-border" alt="hiive.buzz screenshot displaying the top products">
 </div>
 
 <div class="case-study-container case-study-container-white">
-  <img src="<%= image_path('forrest/forrest-run.gif')  %>" class="case-study-img-md red-border" alt="forrest gump running gif as reporter asks 'why are you doing this?'">
+  <img src="<%= image_path('hiive/hiive_12')  %>" class="case-study-img-lg case-study-img-top red-border" alt="hiive.buzz screenshot of the creators page displaying all the creators on the platform">
   <div class="case-study-text-box case-study-right-text red-text red-border white-bg">
     <p>
      Users can browse every creators on hiive at a glance and easily visit their stores.
