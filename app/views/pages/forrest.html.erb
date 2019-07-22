@@ -1,20 +1,18 @@
 <div class="case-study-header">
   <div class="case-study-header-info">
+    <a href="https://www.producthunt.com/posts/run-forrest-run?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-run-forrest-run" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=159143&theme=light&period=daily" alt="Run, Forrest! Run! - Tweet #runforrestrun to make Forrest Gump run another mile. | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
+    <br><br>
     <h1>
       Run, Forrest! Run!
     </h1>
-    <div class="case-study-tech-stack">
-      <p>Ruby</p>
-      <p>Ruby on Rails</p>
-      <p>Javascript</p>
-      <p>CSS</p>
-      <p>HTML</p>
-      <p>PostgreSQL</p>
-      <p>Twitter API</p>
-      <p>Mapbox API</p>
-      <p>WebSockets</p>
-      <p>Sidekiq Scheduler</p>
-      <p>Bootstrap</p>
+    <div class="case-study-tech-stack-text">
+      <p>
+        Ruby | Ruby on Rails | Heroku | Javascript | CSS | HTML | PostgreSQL | Twitter API | Mapbox API | WebSockets | Sidekiq Scheduler | Bootstrap
+      </p>
+    </div>
+    <div class="content-btn-container">
+      <%= link_to 'SEE PROJECT', 'http://forrestgump.live', target: 'blank', class: 'content-btn content-btn-red'  %>
+      <%= link_to 'SEE CODE', 'https://github.com/yeniv/Run-Forrest-Run', target: 'blank', class: 'content-btn content-btn-red'  %>
     </div>
   </div>
 </div>
@@ -58,7 +56,7 @@
 <div class="case-study-container case-study-container-white">
   <div class="case-study-text-box case-study-left-text red-text red-border white-bg">
     <p>
-      A scheduled Sidekiq background task calls the Twitter API every 24-seconds (maximising Twitter's 150 API calls/hour limit) to search for new Tweets using #runforrestrun.
+      A scheduled Sidekiq background task calls the <a href="https://developer.twitter.com/en/docs/tweets/search/overview" class="text-btn-red" target="blank">Twitter API</a> every 24-seconds (maximising Twitter's 150 API calls/hour limit) to search for new Tweets using #runforrestrun.
     </p>
   </div>
   <img src="<%= image_path('forrest/forrest_3.jpeg')  %>" class="case-study-img-md red-border" alt="tweet from forrestgump.live showing someone using #runforrestrun while playing world of warcraft">
