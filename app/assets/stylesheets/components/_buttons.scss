@@ -90,6 +90,22 @@
   transition: all 0.4s ease;
 }
 
+.text-btn-red-lg {
+  padding: 5px 0;
+  margin: 0 -1px;
+  color: $hero-color;
+  transition: all 0.4s ease;
+  box-shadow: 0 -8px $hero-color inset;
+}
+
+.text-btn-red-lg:hover {
+  color: $hero-color;
+  text-decoration: none;
+  box-shadow: 0 0px $hero-color inset;
+  // box-shadow: 0 -40px $hero-color inset;
+  transition: all 0.4s ease;
+}
+
 .text-btn-red-sm {
   padding: 3px 0;
   margin: 0 -1px;

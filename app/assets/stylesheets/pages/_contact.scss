@@ -1,0 +1,39 @@
+.contact-container {
+  height: calc(100vh - 5.5vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $hero-color;
+  h1 {
+    font-weight: 900;
+    font-size: 4vw;
+    line-height: 4vw;
+    margin-bottom: 4vw;
+  }
+   h2 {
+    font-weight: 900;
+    font-size: 3vw;
+    line-height: 3vw;
+  }
+  span {
+    text-decoration: line-through;
+  }
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+  i {
+    font-size: 60px;
+    color: $hero-color;
+    padding: 1vh;
+  }
+  i:hover {
+    color: #ea1919;
+  }
+}
