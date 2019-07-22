@@ -1,0 +1,61 @@
+.about-header {
+  height: 50vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: $hero-color;
+    font-weight: 900;
+    font-size: 5.5vw;
+  }
+}
+
+.about-image-container {
+  display: flex;
+  padding: 0 10vw;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.about-portrait {
+  // border-radius: 50%;
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+  background-image: image_path('tristan.jpeg');
+  margin-right: 60px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: all 0.8s ease;
+}
+
+.about-portrait:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  transition: all 0.8s ease;
+}
+
+.about-text {
+  font-family: $headers-font;
+  color: $hero-color;
+  h2 {
+    font-weight: 900;
+    font-size: 3vw;
+    line-height: 54px;
+    padding-bottom: 15px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  span {
+    text-decoration: line-through;
+  }
+}
