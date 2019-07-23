@@ -1,6 +1,7 @@
 const text = document.querySelector('.nav-text-update')
 let navHeight = document.querySelector('.nav-container').getBoundingClientRect().height
 
+// home page
 const forrestTop = document.querySelector('#forrest').getBoundingClientRect().top - navHeight
 const forrestBottom = document.querySelector('#forrest').getBoundingClientRect().bottom - navHeight
 
@@ -9,20 +10,6 @@ const hiiveBottom = document.querySelector('#hiive').getBoundingClientRect().bot
 
 const fetchTop = document.querySelector('#fetch').getBoundingClientRect().top - navHeight
 const fetchBottom = document.querySelector('#fetch').getBoundingClientRect().bottom
-
-changeText = (scrollPosition, top, bottom) => {
-  return (scrollPosition > top) && (scrollPosition < bottom)
-}
-
-fadeInText = (newText) => {
-  if (text.innerHTML != newText) {
-      text.innerHTML = newText
-      text.classList.remove('nav-text-fadeout')
-      text.classList.remove('nav-text-fadein')
-      text.offsetWidth = text.offsetWidth;
-      text.classList.add('nav-text-fadein')
-    }
-}
 
 window.addEventListener(
   'scroll', () => {
@@ -39,7 +26,22 @@ window.addEventListener(
   }
 )
 
+// forrest case study
 
+
+changeText = (scrollPosition, top, bottom) => {
+  return (scrollPosition > top) && (scrollPosition < bottom)
+}
+
+fadeInText = (newText) => {
+  if (text.innerHTML != newText) {
+      text.innerHTML = newText
+      text.classList.remove('nav-text-fadeout')
+      text.classList.remove('nav-text-fadein')
+      text.offsetWidth = text.offsetWidth;
+      text.classList.add('nav-text-fadein')
+    }
+}
 
 
 // is working
