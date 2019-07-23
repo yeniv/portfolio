@@ -1,6 +1,7 @@
 .nav-text-fadein {
+  display: inline-block;
   animation-name: fadeIn;
-  animation-duration: 0.5s;
+  animation-duration: 0.6s;
   animation-fill-mode: forwards;
   position: relative
 }
@@ -16,17 +17,21 @@
   }
 }
 
-.nav-text-fadeout {
-  animation-name: fadeOut;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
+// .nav-text-fadeout {
+//   animation-name: fadeOut;
+//   animation-duration: 0.6s;
+//   animation-fill-mode: forwards;
+// }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+// @keyframes fadeOut {
+//   0% {
+//     opacity: 1;
+//   }
+//   99% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 0;
+//     display: none;
+//   }
+// }

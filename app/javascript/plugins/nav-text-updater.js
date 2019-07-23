@@ -17,37 +17,29 @@ changeText = (scrollPosition, top, bottom) => {
 fadeInText = (newText) => {
   if (text.innerHTML != newText) {
       text.innerHTML = newText
+      text.classList.remove('nav-text-fadeout')
       text.classList.remove('nav-text-fadein')
       text.offsetWidth = text.offsetWidth;
       text.classList.add('nav-text-fadein')
-  }
-}
-
-fadeOutText = (newText) => {
-  if (text.innerHTML != newText) {
-      text.classList.remove('nav-text-fadeout')
-      text.offsetWidth = text.offsetWidth;
-      text.classList.add('nav-text-fadeout')
-      text.innerHTML = ''
-  }
+    }
 }
 
 window.addEventListener(
   'scroll', () => {
     let scrollPosition = window.scrollY
     if (changeText(scrollPosition, forrestTop, forrestBottom)) {
-      fadeOutText('Forrest Gump')
-      fadeInText('Forrest Gump')
+      fadeInText('Forrest')
     } else if (changeText(scrollPosition, hiiveTop, hiiveBottom)) {
-      fadeOutText('Hiive')
-      fadeInText('Hiive')
+      fadeInText('hiive')
     } else if (changeText(scrollPosition, fetchTop, fetchBottom)) {
       fadeInText('Fetch')
     } else {
-      fadeOutText('')
+      fadeInText('')
     }
   }
 )
+
+
 
 
 // is working
@@ -59,3 +51,60 @@ window.addEventListener(
 //       text.classList.add('nav-text-fadein')
 //   }
 // }
+
+//fadein words... not fade out
+// fadeOutText = () => {
+//       text.classList.remove('nav-text-fadeout')
+//       text.offsetWidth = text.offsetWidth;
+//       text.classList.add('nav-text-fadeout')
+// }
+
+// fadeInText = (newText) => {
+//       text.innerHTML = newText
+//       text.classList.remove('nav-text-fadein')
+//       text.offsetWidth = text.offsetWidth;
+//       text.classList.add('nav-text-fadein')
+// }
+
+// textChange = (newText) => {
+//   if (text.innerHTML != newText) {
+//     // fadeOutText()
+//     fadeInText(newText)
+//     // setTimeout(() => {fadeInText(newText)}, 500)
+//   }
+// }
+
+
+// textChange = (newText) => {
+//   if (text.innerHTML != newText) {
+//     // if (text.classList.contains('nav-no-fadeout')) {
+//       text.innerHTML = newText
+//       text.classList.remove('nav-text-fadeout')
+//       text.classList.remove('nav-text-fadein')
+//       text.offsetWidth = text.offsetWidth;
+//       text.classList.add('nav-text-fadein')
+//     // } else {
+//     //   text.classList.add('nav-text-fadeout')
+//     //   setTimeout(() => {
+//     //     text.innerHTML = newText
+//     //     text.classList.remove('nav-text-fadein')
+//     //     text.classList.remove('nav-text-fadeout')
+//     //     text.offsetWidth = text.offsetWidth;
+//     //     text.classList.add('nav-text-fadein')
+//     //   }, 600)
+//     // }
+//   }
+// }
+
+// fadeOutText = (newText) => {
+//   if (text.innerHTML != newText) {
+//       text.classList.remove('nav-text-fadeout')
+//       text.offsetWidth = text.offsetWidth;
+//       text.classList.add('nav-text-fadeout')
+//       // setTimeout(() => {
+//         text.innerHTML = newText
+//       // }, 500)
+//     }
+// }
+
+
