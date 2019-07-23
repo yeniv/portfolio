@@ -6,21 +6,28 @@
   justify-content: space-between;
   align-items: center;
   height: 5.5vw;
-  padding: 0 2vw;
+  padding: 0 3vw;
   z-index: 2;
   a {
     // padding: 0;
-    margin: 0 20px;
     font-family: $headers-font;
     text-decoration: none;
   }
 }
+
+.nav-left a {
+  word-spacing: 0.3vw;
+}
+
 
 .nav-right {
   color: $hero-color;
   display: flex;
   font-size: 20px;
   font-weight: 800;
+  a {
+    margin: 0 20px;
+  }
 }
 
 .nav-title {

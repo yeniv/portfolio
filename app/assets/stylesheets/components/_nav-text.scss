@@ -1,0 +1,16 @@
+.nav-text-fadein {
+  animation-name: fadeIn;
+  // animation-delay: 2.5s;
+  animation-duration: 2s;
+  // animation-fill-mode: forwards;
+}
+// .nav-text-update-animation
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
