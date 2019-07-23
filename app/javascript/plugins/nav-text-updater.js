@@ -28,11 +28,11 @@ window.addEventListener(
   'scroll', () => {
     let scrollPosition = window.scrollY
     if (changeText(scrollPosition, forrestTop, forrestBottom)) {
-      fadeInText('Forrest')
+      fadeInText('LOVES MOVIES')
     } else if (changeText(scrollPosition, hiiveTop, hiiveBottom)) {
-      fadeInText('hiive')
+      fadeInText('HATES BEE STINGS')
     } else if (changeText(scrollPosition, fetchTop, fetchBottom)) {
-      fadeInText('Fetch')
+      fadeInText("WILL WALK YOUR DOG")
     } else {
       fadeInText('')
     }
