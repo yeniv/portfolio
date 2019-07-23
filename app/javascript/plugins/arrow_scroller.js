@@ -1,6 +1,6 @@
 const arrow = document.querySelector('.home-arrow')
 const nav = document.querySelector('.nav-container')
-const portfolioStart = document.querySelector('#portfolio-start')
+const portfolioStart = document.querySelector('#forrest')
 const top = portfolioStart.getBoundingClientRect().top
 
 arrow.addEventListener(
