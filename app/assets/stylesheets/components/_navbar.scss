@@ -27,10 +27,12 @@
   color: $hero-color;
   font-weight: 900;
   font-size: 30px;
+  transition: all 0.4s ease;
 }
 
 .nav-title:hover {
-    color: $hero-color;
+    color: #ea1919;
+    transition: all 0.4s ease;
   }
 
 .nav-link {
