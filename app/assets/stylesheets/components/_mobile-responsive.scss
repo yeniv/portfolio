@@ -1,0 +1,22 @@
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+  .nav-container {
+    height: 5.5vh;
+    padding: 1.3vh;
+  }
+
+  .nav-link,
+  .nav-link-btn,
+  .nav-text-update {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-bar-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {}

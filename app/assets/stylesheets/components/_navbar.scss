@@ -19,14 +19,14 @@
   word-spacing: 0.2vw;
 }
 
-
 .nav-right {
   color: $hero-color;
   display: flex;
+  align-items: center;
   font-size: 20px;
   font-weight: 800;
   a {
-    margin: 0 20px;
+    margin-left: 20px;
   }
 }
 
