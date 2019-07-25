@@ -37,6 +37,10 @@
   background-color: $hero-color;
 }
 
+.case-study-container-iphone {
+  flex-direction: column;
+}
+
 .case-study-header {
   height: 50vh;
   width: 100%;
@@ -134,7 +138,7 @@
 }
 
 .case-study-center-text {
-  margin: 0 auto;
+  // margin: 0 auto;
   margin-top: -50px;
 }
 
@@ -189,6 +193,10 @@
   .case-study-left-text {
     left: 0;
     right: 0;
+  }
+  .case-study-center-text {
+    margin-top: 0;
+    margin-bottom: -50px;
   }
   .case-study-container {
     padding: 0;
