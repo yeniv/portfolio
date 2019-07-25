@@ -39,6 +39,18 @@
 }
 
 .content-btn-red:hover {
+  box-shadow: 0 54px $hero-color inset;
+  transition: all 0.4s ease;
+  color: white;
+}
+
+.content-btn-red-about {
+  color: $hero-color;
+  box-shadow: 0 0 0 5px $hero-color inset;
+  transition: all 0.4s ease;
+}
+
+.content-btn-red-about:hover {
   box-shadow: 0 80px $hero-color inset;
   transition: all 0.4s ease;
   color: white;

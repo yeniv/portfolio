@@ -5,7 +5,6 @@ body {
 .site-container {
   font-family: $headers-font;
   padding: 0 12vw;
-
 }
 
 .red-text {
@@ -13,6 +12,10 @@ body {
 }
 
 .white-text {
+  color: white
+}
+
+.white-text-home {
   color: white
 }
 
@@ -25,6 +28,10 @@ body {
 }
 
 .white-border {
+  border: 3px solid white;
+}
+
+.white-border-home {
   border: 3px solid white;
 }
 
