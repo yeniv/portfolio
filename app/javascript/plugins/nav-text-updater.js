@@ -12,6 +12,10 @@ fadeInText = (newText) => {
     }
 }
 
+displayText = (width) => {
+  return (width > 940)
+}
+
 const text = document.querySelector('.nav-text-update')
 let navHeight = document.querySelector('.nav-container').getBoundingClientRect().height
 
@@ -28,11 +32,11 @@ const fetchBottom = document.querySelector('#fetch').getBoundingClientRect().bot
 window.addEventListener(
   'scroll', () => {
     let scrollPosition = window.scrollY
-    if (changeText(scrollPosition, forrestTop, forrestBottom)) {
+    if (changeText(scrollPosition, forrestTop, forrestBottom) && displayText(window.innerWidth)) {
       fadeInText('LOVES MOVIES')
-    } else if (changeText(scrollPosition, hiiveTop, hiiveBottom)) {
+    } else if (changeText(scrollPosition, hiiveTop, hiiveBottom) && displayText(window.innerWidth)) {
       fadeInText('HATES BEE STINGS')
-    } else if (changeText(scrollPosition, fetchTop, fetchBottom)) {
+    } else if (changeText(scrollPosition, fetchTop, fetchBottom) && displayText(window.innerWidth)) {
       fadeInText("WILL WALK YOUR DOG")
     } else {
       fadeInText('')

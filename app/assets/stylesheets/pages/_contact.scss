@@ -1,4 +1,5 @@
 .contact-container {
+  padding: 40px;
   height: calc(100vh - 5.5vw);
   display: flex;
   justify-content: center;
@@ -33,5 +34,31 @@
   }
   i:hover {
     color: #ea1919;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    h1 {
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 40px;
+      margin: 4vw;
+    }
+     h2 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+  .contact-links {
+    padding-top: 2vw;
+    i {
+      font-size: 40px;
+      padding: 1vh;
+    }
+  }
+  .text-btn-red-lg {
+    margin: 0;
+    box-shadow: 0 -6px $hero-color inset;
   }
 }

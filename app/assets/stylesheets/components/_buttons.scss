@@ -5,11 +5,14 @@
 }
 
 .content-btn {
-  padding: 14px 16px;
+  display: inline-block;
+  // padding: 14px 16px;
+  margin: 10px 10px 0 0;
+  padding: 12px 16px;
   font-family: $headers-font;
   font-weight: 800;
   font-size: 20px;
-  margin-right: 10px;
+  // margin-right: 10px;
   transition: all 0.4s ease;
 }
 
@@ -41,16 +44,31 @@
   color: white;
 }
 
+.content-btn-red-about {
+  color: $hero-color;
+  box-shadow: 0 0 0 5px $hero-color inset;
+  transition: all 0.4s ease;
+}
+
+.content-btn-red-about:hover {
+  box-shadow: 0 80px $hero-color inset;
+  transition: all 0.4s ease;
+  color: white;
+}
+
 .content-btn-red-sm {
+  font-size: 15px;
   padding: 12px 12px;
   color: $hero-color;
   box-shadow: 0 0 0 3px $hero-color inset;
   transition: all 0.6s ease;
+  text-align: center;
+  display: block;
 }
 
 .content-btn-red-sm:hover {
   text-decoration: none;
-  box-shadow: 0 54px $hero-color inset;
+  box-shadow: 0 68px $hero-color inset;
   transition: all 0.6s ease;
   color: white;
 }
@@ -74,6 +92,7 @@
 }
 
 .text-btn-red {
+  box-decoration-break: clone;
   padding: 3px 0;
   margin: 0 -1px;
   font-weight: 600;
