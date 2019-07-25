@@ -5,11 +5,14 @@
 }
 
 .content-btn {
-  padding: 14px 16px;
+  display: inline-block;
+  // padding: 14px 16px;
+  margin: 10px 10px 0 0;
+  padding: 12px 16px;
   font-family: $headers-font;
   font-weight: 800;
   font-size: 20px;
-  margin-right: 10px;
+  // margin-right: 10px;
   transition: all 0.4s ease;
 }
 

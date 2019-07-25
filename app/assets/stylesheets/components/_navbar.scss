@@ -76,3 +76,19 @@
   transition: all 0.4s ease;
 }
 
+@media (max-width: 576px) {
+  .nav-link,
+  .nav-link-btn,
+  .nav-text-update {
+    display: none;
+  }
+  .case-study-header-info h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 577px) {
+  .nav-bar-menu {
+    display: none;
+  }
+}
