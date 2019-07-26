@@ -173,6 +173,9 @@
 }
 
 @media (max-width: 768px) {
+  .case-study-header {
+    height: auto;
+  }
   .case-study-header-info h1 {
     font-size: 70px;
   }
