@@ -23,13 +23,6 @@
   text-align: center;
 }
 
-.contact-number {
-  color: $hero-color;
-  &:hover{
-    color: $hero-color;
-  }
-}
-
 .contact-links {
   display: flex;
   justify-content: center;
@@ -46,13 +39,11 @@
 
 @media (max-width: 768px) {
   .contact-container {
-    height: calc(100vh - 50px);
     h1 {
       font-weight: 900;
       font-size: 40px;
       line-height: 40px;
       margin: 4vw;
-      padding-bottom: 10px;
     }
      h2 {
       font-size: 20px;
