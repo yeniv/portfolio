@@ -138,6 +138,17 @@
   }
 }
 
+@media (max-width: 576px) {
+  .about-container {
+    height: auto;
+  }
+  .about-text-columns {
+    margin-top: 20px;
+    columns: 1;
+    column-gap: 8px;
+  }
+}
+
 
 
 
