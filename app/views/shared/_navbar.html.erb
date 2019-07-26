@@ -12,14 +12,13 @@
 </div>
 
 <!-- hamburger menu for mobile -->
-  <div class="nav-bar-menu-popup hidden">
-    <div class="nav-bar-link-container">
-      <i class="fas fa-times nav-bar-close"></i>
-      <%= link_to 'PROJECTS', root_path, class: 'nav-bar-link' %>
-      <%= link_to 'RESUME', '/hire_me.pdf', target: 'blank', class: 'nav-bar-link' %>
-      <%= link_to 'ABOUT', about_path, class: 'nav-bar-link' %>
-      <%= link_to 'CONTACT', contact_path, class: 'nav-bar-link' %>
-    </div>
-  </div>
 
+<div class="nav-bar-menu-popup hidden">
+  <div class="nav-bar-link-container">
+    <%= link_to 'PROJECTS', root_path, class: 'nav-bar-link' %>
+    <%= link_to 'RESUME', '/hire_me.pdf', target: 'blank', class: 'nav-bar-link' %>
+    <%= link_to 'ABOUT', about_path, class: 'nav-bar-link' %>
+    <%= link_to 'CONTACT', contact_path, class: 'nav-bar-link' %>
+  </div>
+</div>
 
