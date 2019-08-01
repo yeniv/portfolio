@@ -1,5 +1,3 @@
-console.log('hello from hamburger menu')
-
 const menuIcon = document.querySelector('.nav-bar-menu')
 const popup = document.querySelector('.nav-bar-menu-popup')
 const link = document.querySelectorAll('.nav-bar-link')
