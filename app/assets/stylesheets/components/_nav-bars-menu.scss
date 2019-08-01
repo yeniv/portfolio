@@ -32,8 +32,22 @@
   // background-color: rgba(0,0,0,0.5)
 }
 
+.nav-bar-popup-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12px;
+  color: white;
+  z-index: 5;
+  font-size: 40px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .nav-bar-link-container {
   text-align: center;
+  // padding-bottom: 50px
 }
 
 .nav-bar-link {
