@@ -33,17 +33,21 @@
 }
 
 .nav-bar-popup-close {
-  position: sticky;
+  position: absolute;
   top: 0;
   right: 0;
-  margin: 10px;
+  padding: 12px;
   color: white;
   z-index: 5;
-  font-size: 30px;
+  font-size: 40px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .nav-bar-link-container {
   text-align: center;
+  // padding-bottom: 50px
 }
 
 .nav-bar-link {
