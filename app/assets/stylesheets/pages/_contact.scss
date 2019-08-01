@@ -39,6 +39,7 @@
 
 @media (max-width: 768px) {
   .contact-container {
+    padding-bottom: 130px;
     h1 {
       font-weight: 900;
       font-size: 40px;
@@ -61,4 +62,8 @@
     margin: 0;
     box-shadow: 0 -6px $hero-color inset;
   }
+}
+
+@media (max-width: 576px) {
+
 }
