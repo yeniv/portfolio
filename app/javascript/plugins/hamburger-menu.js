@@ -10,4 +10,3 @@ menuIcon.addEventListener('click', () => {
 popupClose.addEventListener('click', () => {
   popup.classList.toggle('hidden')
 })
-
